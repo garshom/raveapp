@@ -1,0 +1,17 @@
+{
+    "title": "Supplier Payments",
+    "bulk_data": [
+        {
+            "account_bank": "MPS",
+            "account_number": "2540782773934",
+            "amount": 1200,
+            "currency": "KES",
+            "beneficiary_name": "Akinyi Kimwei",
+            "meta": {
+              "sender": "Flutterwave Developers",
+              "sender_country": "ZA",
+              "mobile_number": "+23457558595"
+            }
+        }
+    ]
+}
