@@ -45,6 +45,7 @@ export class AppService {
 
     try{
       const response = await instance.get('v3/transfers/fee?');
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -59,6 +60,7 @@ export class AppService {
 
     try{
       const response = await instance.get('v3/subaccounts');
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -71,6 +73,7 @@ export class AppService {
     instance.defaults.method = 'POST';
     try{
       const response = await instance.post('v3/beneficiaries', {...params});
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -85,6 +88,7 @@ export class AppService {
 
     try{
       const response = await instance.get('v3/beneficiaries');
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -98,6 +102,7 @@ export class AppService {
 
     try{
       const response = await instance.get(`v3/beneficiaries/${params.id}`);
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -111,6 +116,7 @@ export class AppService {
 
     try{
       const response = await instance.get('v3/balances');
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -125,6 +131,7 @@ export class AppService {
 
     try{
       const response = await instance.get(`/v3/balances/${params.currency}`);
+      Logger.log(response.data);
       return response.data;
     }catch(error){
       return error.response.data;
@@ -137,6 +144,7 @@ export class AppService {
 
     try{
       const response = await instance.post('v3/transfers', {...params});
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
@@ -149,6 +157,7 @@ export class AppService {
     instance.defaults.method = 'POST';
     try{
       const response = await instance.post('v3/bulk-transfers/', {...params});
+      Logger.log(response.data);
       return response.data;
 
     }catch(error){
